@@ -7,10 +7,18 @@
     <title>Background change</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body id="body">
+<body id="body"> 
    <div class="main">
     <h1 class="title">Change Background Color</h1>
-    <h3>Background color code <span id ="color_code">#e5f3ff</span></h3>
+    <div id="select">
+        <label class="label" for="color">Type of color :</label>
+        <select class="select" name="" id="option">
+            <option value="hex">HEX</option>
+            <option value="rgb">RGB</option>
+            <option value="hsl">HSL</option>
+        </select>
+    </div>
+    <h3>Background color code:  <span id ="color_code">#e5f3ff</span></h3>
     <div class="button">
         <button id="btn">Click Here</button>
     </div>
