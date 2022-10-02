@@ -2,11 +2,10 @@
 
 const randomCode=(code)=>{
     if(code=="hex"){
-        console.log(code)
         const codes="123456789abcdef";
         let colorCode = "";
         for (let i = 0; i < 6; i++) {
-            const code = Math.ceil(Math.random()*15)
+            const code = Math.floor(Math.random()*15)
             colorCode+=codes.substring(code,code+1);
         }
         return colorCode;
